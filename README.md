@@ -16,10 +16,6 @@ This project analyzes public transaction data from the Gensyn Testnet to uncover
 ├── app.py # Streamlit dashboard app
 ├── analysis_script.ipynb
 ├── data_collection.ipynb
-├── processed/
-│ ├── top_from_count.csv
-│ ├── avg_gas_per_block.csv
-│ └── ...
 ├── README.md
 ├── requirements.txt
 └── Gensyn_Testnet_Data_Analysis.pdf
@@ -43,7 +39,24 @@ This project analyzes public transaction data from the Gensyn Testnet to uncover
    ```bash
    pip install -r requirements.txt
    ```
-3. Run the Streamlit dashboard
+3. Prepare the Data
+   Open the notebook:  
+   `data_collection.ipynb`
+   
+   Follow the instructions to fetch and save the raw Gensyn testnet data (e.g. from Alchemy).
+   
+   Ensure the file `gensyn_transactions_flat_full.csv` is saved in the project root directory.
+
+4.  Run the Analysis Pipeline
+
+   Open and run:  
+   `analysis_script.ipynb`
+   
+   This notebook processes the raw data and generates all output files into the `processed/` folder.
+   
+   > **Note:** Output `.csv` files are **not included** in the repository due to file size (~1 GB). You must generate them locally by running the notebook.
+
+5. Run the Streamlit dashboard
    ```bash
    streamlit run dashboard.py
    ```
