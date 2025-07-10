@@ -40,18 +40,23 @@ This project analyzes public transaction data from the Gensyn Testnet to uncover
    pip install -r requirements.txt
    ```
 3. Prepare the Data
-   \nOpen the notebook:  `data_collection.ipynb`
-   
+
+   Open the notebook:  
+   `data_collection.ipynb`
+
    Follow the instructions to fetch and save the raw Gensyn testnet data (e.g. from Alchemy).
-   
+
    Ensure the file `gensyn_transactions_flat_full.csv` is saved in the project root directory.
 
 4. Run the Analysis Pipeline
-   \nOpen and run:  `analysis_script.ipynb`
-   
+
+   Open and run:  
+   `analysis_script.ipynb`
+
    This notebook processes the raw data and generates all output files into the `processed/` folder.
-   
+
    > **Note:** Output `.csv` files are **not included** in the repository due to file size (~1 GB). You must generate them locally by running the notebook.
+
 
 5. Run the Streamlit dashboard
    ```bash
