@@ -47,8 +47,7 @@ This project analyzes public transaction data from the Gensyn Testnet to uncover
    
    Ensure the file `gensyn_transactions_flat_full.csv` is saved in the project root directory.
 
-4.  Run the Analysis Pipeline
-
+4. Run the Analysis Pipeline
    Open and run:  
    `analysis_script.ipynb`
    
