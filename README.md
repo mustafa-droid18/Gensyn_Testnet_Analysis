@@ -14,7 +14,8 @@ This project analyzes public transaction data from the Gensyn Testnet to uncover
 ### 📦 Project Structure
 ```
 ├── app.py # Streamlit dashboard app
-├── analysis_script.ipynb 
+├── analysis_script.ipynb
+├── data_collection.ipynb
 ├── processed/
 │ ├── top_from_count.csv
 │ ├── avg_gas_per_block.csv
